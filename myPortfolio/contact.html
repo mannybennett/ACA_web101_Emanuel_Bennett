@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contact-styles.css">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    
+    <main id="container">
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" >
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" >
+            </div>
+
+            <div>
+                <textarea id="comments" name="comments" placeholder="Comments" minlength="20" maxlength="500" cols="25" rows="6"></textarea>
+            </div>
+            
+            <p>How did you hear about me?</p>
+            <div class="checkbox">
+                <label for="classmate">Classmate</label>
+                <input type="checkbox" name="classmate" id="classmate">
+            </div>
+
+            <div class="checkbox">
+                <label for="resume">Resume Submission</label>
+                <input type="checkbox" name="resume" id="resume">
+            </div>
+
+            <div class="checkbox">
+                <label for="linkedin">LinkedIn</label>
+                <input type="checkbox" name="linkedin" id="linkedin">
+            </div>
+
+            <div class="checkbox">
+                <label for="coding">Coding Academy Rec</label>
+                <input type="checkbox" name="coding" id="coding">
+            </div>
+
+            <p>Would you like to be contacted back?</p>
+            <div class="radio">
+                <label for="yes">Yes</label>
+                <input type="radio" name="contact" id="yes" value="yes">
+            </div>
+
+            <div class="radio">
+                <label for="no">No</label>
+                <input type="radio" name="contact" id="no" value="no">
+            </div>
+
+            <div>
+            <label for="date">Birthday Wish</label>
+            <input type="date" name="date" id="date" min="2019-06-10">
+            </div>
+        
+            <button type="reset">Reset</button>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+  <script src="scripts.js"></script>
+
+</body>
+</html>
